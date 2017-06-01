@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证email</title>
+
+    <!--没有以下四行库文件也可-->
+    <link rel="stylesheet" href="public/bootstrap.css">
+    <script src="public/bootstrap.js"></script>
+    <script src="public/validator.js"></script>
+    <script src="public/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+<!--data-toggle="validator" role="form"将表单和验证结合起来-->
+<form data-toggle="validator" role="form">
+    <div class="form-group">
+        <label for="inputEmail" class="control-label">Email</label>
+        <!--type="email" 控制这个验证    required验证非空-->
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>

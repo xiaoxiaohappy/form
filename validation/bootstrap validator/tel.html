@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证手机号</title>
+
+    <!--没有以下四行库文件也可-->
+    <link rel="stylesheet" href="public/bootstrap.css">
+    <script src="public/bootstrap.js"></script>
+    <script src="public/validator.js"></script>
+    <script src="public/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+<!--data-toggle="validator" role="form"将表单和验证结合起来-->
+<form data-toggle="validator" role="form">
+    <div class="form-group">
+        <!--type="tel" 和pattern表示的正则表达式，控制这个验证    required验证非空-->
+        <label for="input" class="control-label">Tel</label>
+        <input type="tel" id="inputTel" pattern="^1(3|4|5Tel|7|8)[0-9]\d{8}$" placeholder="tel"  required>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
